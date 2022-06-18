@@ -291,3 +291,42 @@ form input{
     text-decoration: none;
     color: #757575;
 }
+
+
+/* Responsive */
+
+
+@media (max-width: 600px){
+    .band-banner .introduce{
+        display: none;
+    }
+    .band-members{
+        flex-direction: column;
+    }
+    .tour-tickets{
+        flex-direction: column;
+    }
+    .tour-tickets .tour-ticket{
+        width: 100%;
+    }
+    .contact-infor{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .contact-address ul{
+        padding-left: 0;
+    }
+    .user-infor{
+        display: flex;
+        flex-direction: column;
+    }
+    .user-infor input{
+        margin-top: 8px;
+    }
+    .header ul li{
+        display: none;
+    }
+    .header ul li:first-child{
+        display: block;
+    }
+}
