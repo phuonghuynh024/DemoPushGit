@@ -5,11 +5,14 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body{
     margin: 0;
 }
+
+
 
 .header{
     display: flex;
@@ -17,8 +20,10 @@ body{
     font-size: 15px;
     background-color: #000000;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1;
-    width: 100%;
 }
 
 
@@ -92,6 +97,7 @@ body{
 } 
 
 .band-banner{
+    margin-top: 41px;
     position: relative;
     padding-top: 50%;
     background: url(/image/band_la.jpg) center / cover no-repeat;
@@ -152,9 +158,6 @@ body{
     color: white;
 }
 
-.tour-schedule{
-
-}
 
 .tour-schedule{
     background-color: white;
@@ -190,10 +193,18 @@ body{
 
 
 
+
 .tour-tickets{
-    width: 30%;
+    
     padding: 32px 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tour-ticket{
+    width: 32%;
 }
 
 .tour-ticket img{
@@ -203,10 +214,80 @@ body{
 .tour-infor{
     background-color: white;
     text-align: left;
+    overflow: hidden;
+    padding: 0 16px;;
 }
 
+.buy-ticket{
+    background-color: #000000;
+    color: white;
+    padding: 4px 8px;
+    border: none;
+    margin-bottom: 32px;
+}
 
 
 .tour-tickets img{
     width: 100%;
+}
+
+.contact-infor{
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+form input{
+    padding: 8px;
+    outline: none;
+}
+
+.contact-address{
+    text-align: left;
+}
+
+.contact-address ul{
+    list-style: none;
+}
+
+.contact-user{
+    text-align: right;
+}
+
+.user-message{
+    margin-top: 8px;
+}
+
+.user-message input{
+    width: 100%;
+}
+
+
+.contact-user button{
+    margin-top: 16px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+.band-slider img{
+    width: 100%;
+}
+
+.social > a{
+    text-decoration: none;
+    color: #757575;
+    font-size: 32px;
+    padding: 0 8px;
+}
+
+.copyright{
+    color: #757575;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: #757575;
 }

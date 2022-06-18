@@ -14,9 +14,9 @@
         <div class="header_menu">
             <ul class="nav_menu">
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">BAND</a></li>
-                <li><a href="#">TOUR</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#band-nav">BAND</a></li>
+                <li><a href="#tour-nav">TOUR</a></li>
+                <li><a href="#contact-nav">CONTACT</a></li>
                 <li class="has-subnav">
                     <a href="#">MORE <span class="ti-angle-down"></span></a>
                     <div class="subnav">
@@ -41,7 +41,7 @@
                 <p>The atmosphere in New York is lorem ipsum.</p>
             </div>
         </div>
-        <div class="band-infor">
+        <div id="band-nav" class="band-infor">
             <div class="container">
                 <h2 class="band-title">THE BAND</h2>
                 <p class="band-sub-title">We love music</p>
@@ -75,7 +75,7 @@
                 </div>
             </div>
         </div>
-        <div class="band-tour">
+        <div id="tour-nav" class="band-tour">
             <div class="container">
                 <div class="tour">
                     <h2 class="tour-date">TOUR DATES</h2>
@@ -102,14 +102,76 @@
                             <p class="ticket-place">New York</p>
                             <p class="ticket-date">Fri 27 Nov 2016</p>
                             <p class="ticket-detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-ticket">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="tour-ticket">
+                        <img src="./image/paris.jpg" alt="ticket">
+                        <div class="tour-infor">
+                            <p class="ticket-place">Paris</p>
+                            <p class="ticket-date">Sat 28 Nov 2016</p>
+                            <p class="ticket-detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-ticket">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="tour-ticket">
+                        <img src="./image/sanfran.jpg" alt="ticket">
+                        <div class="tour-infor">
+                            <p class="ticket-place">San Francisco</p>
+                            <p class="ticket-date">Sun 29 Nov 2016</p>
+                            <p class="ticket-detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-ticket">Buy Now</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="band-contact"></div>
+        <div id="contact-nav" class="band-contact">
+            <div class="container">
+                <h2>CONTACT</h2>
+                <p>Fan? Drop a note!</p>
+                <div class="contact-infor">
+                    <div class="contact-address">
+                        <ul>
+                            <li><span class="ti-location-pin"></span> Chicago, US</li>
+                            <li><span class="ti-headphone-alt"></span> Phone: +00 151515</li>
+                            <li><span class="ti-email"></span> Email: mail@mail.com</li>
+                        </ul>
+                    </div>
+                    <div class="contact-user">
+                        <form action="">
+                            <div class="user-infor">
+                                <input type="text" class="name" placeholder="Name">
+                                <input type="email" class="email" placeholder="Email">
+                            </div>
+                            <div class="user-message">
+                                <input type="text" class="message" placeholder="Message">
+                            </div>
+                            <button>SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="band-slider">
+            <img src="/image/map.jpg" alt="">
+        </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <div class="container">
+            <div class="social">
+                <a href="#" class="ti-facebook"></a>
+                <a href="" class="ti-instagram"></a>
+                <a href="" class="ti-github"></a>
+                <a href="" class="ti-twitter"></a>
+                <a href="" class="ti-linkedin"></a>
+                <a href="" class="ti-youtube"></a>
+            </div>
+            <div class="copyright">
+                <p>Powered by <a href="" class="">w3.css</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
