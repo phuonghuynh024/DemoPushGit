@@ -33,6 +33,11 @@
         <div class="header_search">
             <span class="ti-search"></span>
         </div>
+
+        <div id="mobile" class="header_mobile_search">
+            <span class="ti-menu"></span>
+        </div>
+
     </div>
     <div class="wrapper">
         <div class="band-banner">
@@ -172,6 +177,47 @@
             </div>
         </div>
     </div>
+    <script>
+        showMenu = false;
+        var menu = document.getElementById('mobile');
+        var nav_menu = document.getElementsByClassName('nav_menu')[0];
+        var nav_item = document.querySelectorAll('.header ul li');
+        var defaultHeight = menu.clientHeight;
+        if(menu.clientHeight == 0){
+            hideNav();
+        }
+        menu.onclick = function () {
+            if (!showMenu) {
+                showNav();
+            } else {
+                hideNav();
+            }
+        }
+        function showNav() {
+            for (i = 0; i < nav_item.length; i++) {
+                nav_item[i].style.display = "block";
+            }
+            nav_menu.style.display = "flex";
+            nav_menu.style.flexDirection = "column";
+            menu.style.height = defaultHeight + "px";
+            
+            
+            showMenu = true;
+        }
+        function hideNav() {
+            for (i = 0; i < nav_item.length; i++) {
+                nav_item[i].style.display = null;
+            }
+            nav_menu.style.display = null;
+            nav_menu.style.flexDirection = null;
+            nav_item[0].style.display = null;
+            showMenu = false;
+        }
+
+
+
+
+    </script>
 </body>
 
 </html>

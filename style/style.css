@@ -82,15 +82,21 @@ body{
     color: #000000;
 }
 
-
+.header_mobile_search,
 .header_search{
     color: #ffffff;
 }
 
+.header_mobile_search{
+    display: none;
+}
+
+.header_mobile_search:hover,
 .header_search:hover{
     background-color: #f44336;
 }
 
+.header_mobile_search,
 .header_search span{
     line-height: 41px;
     padding: 0 24px;
@@ -296,6 +302,12 @@ form input{
 /* Responsive */
 
 
+@media (min-width: 601){
+    .nav_menu{
+        display: block !important;
+    }
+}
+
 @media (max-width: 600px){
     .band-banner .introduce{
         display: none;
@@ -323,10 +335,24 @@ form input{
     .user-infor input{
         margin-top: 8px;
     }
+    
     .header ul li{
         display: none;
     }
     .header ul li:first-child{
         display: block;
     }
+
+    .header_search{
+        display: none;
+    }
+
+    .header_mobile_search{
+        display: block;
+        cursor: pointer;
+    }
+
+    
+
+
 }
