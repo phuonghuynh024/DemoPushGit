@@ -301,13 +301,6 @@ form input{
 
 /* Responsive */
 
-
-@media (min-width: 601){
-    .nav_menu{
-        display: block !important;
-    }
-}
-
 @media (max-width: 600px){
     .band-banner .introduce{
         display: none;
